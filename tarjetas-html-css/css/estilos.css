@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f0f2f1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 300px;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-tarjeta{
+    margin: 20px;
+}
+
+.contenedor-tarjeta a{
+    display: inline-block;
+}
+
+.contenedor-tarjeta:hover figure{
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    -moz-transform: perspective(600px) rotateY(180deg);
+    -o-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+figure{
+    width: 300px;
+    height: 350px;
+    margin: 0;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .front, figure .back{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+figure .front{
+    display: block;
+    /*backface-visibility: hidden;*/
+
+}
+
+figure .back{
+    position: absolute;
+    top:0;
+    padding: 20px;
+    color: #fff;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+}
+
+.contenedor-tarjeta:nth-child(1) figure .back{
+    background: rgba(236,198,206,0.66);
+    background: -moz-linear-gradient(top, rgba(236,198,206,0.66) 0%, rgba(222,187,194,0.66) 7%, rgba(52,54,55,0.6) 91%, rgba(34,40,40,0.6) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236,198,206,0.66)), color-stop(7%, rgba(222,187,194,0.66)), color-stop(91%, rgba(52,54,55,0.6)), color-stop(100%, rgba(34,40,40,0.6)));
+    background: -webkit-linear-gradient(top, rgba(236,198,206,0.66) 0%, rgba(222,187,194,0.66) 7%, rgba(52,54,55,0.6) 91%, rgba(34,40,40,0.6) 100%);
+    background: -o-linear-gradient(top, rgba(236,198,206,0.66) 0%, rgba(222,187,194,0.66) 7%, rgba(52,54,55,0.6) 91%, rgba(34,40,40,0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(236,198,206,0.66) 0%, rgba(222,187,194,0.66) 7%, rgba(52,54,55,0.6) 91%, rgba(34,40,40,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(236,198,206,0.66) 0%, rgba(222,187,194,0.66) 7%, rgba(52,54,55,0.6) 91%, rgba(34,40,40,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecc6ce', endColorstr='#222828', GradientType=0 );   
+}
+
+.contenedor-tarjeta:nth-child(2) figure .back{
+    
+   background: rgba(162,242,181,0.66);
+   background: -moz-linear-gradient(top, rgba(162,242,181,0.66) 0%, rgba(151,231,178,0.66) 7%, rgba(19,103,138,0.6) 91%, rgba(5,89,134,0.6) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(162,242,181,0.66)), color-stop(7%, rgba(151,231,178,0.66)), color-stop(91%, rgba(19,103,138,0.6)), color-stop(100%, rgba(5,89,134,0.6)));
+   background: -webkit-linear-gradient(top, rgba(162,242,181,0.66) 0%, rgba(151,231,178,0.66) 7%, rgba(19,103,138,0.6) 91%, rgba(5,89,134,0.6) 100%);
+   background: -o-linear-gradient(top, rgba(162,242,181,0.66) 0%, rgba(151,231,178,0.66) 7%, rgba(19,103,138,0.6) 91%, rgba(5,89,134,0.6) 100%);
+   background: -ms-linear-gradient(top, rgba(162,242,181,0.66) 0%, rgba(151,231,178,0.66) 7%, rgba(19,103,138,0.6) 91%, rgba(5,89,134,0.6) 100%);
+   background: linear-gradient(to bottom, rgba(162,242,181,0.66) 0%, rgba(151,231,178,0.66) 7%, rgba(19,103,138,0.6) 91%, rgba(5,89,134,0.6) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2f2b5', endColorstr='#055986', GradientType=0 );
+
+}
+
+.contenedor-tarjeta:nth-child(3) figure .back{
+    
+    background: rgba(215,246,225,0.66);
+    background: -moz-linear-gradient(top, rgba(215,246,225,0.66) 0%, rgba(201,236,216,0.66) 7%, rgba(38,116,107,0.6) 91%, rgba(21,103,95,0.6) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(215,246,225,0.66)), color-stop(7%, rgba(201,236,216,0.66)), color-stop(91%, rgba(38,116,107,0.6)), color-stop(100%, rgba(21,103,95,0.6)));
+    background: -webkit-linear-gradient(top, rgba(215,246,225,0.66) 0%, rgba(201,236,216,0.66) 7%, rgba(38,116,107,0.6) 91%, rgba(21,103,95,0.6) 100%);
+    background: -o-linear-gradient(top, rgba(215,246,225,0.66) 0%, rgba(201,236,216,0.66) 7%, rgba(38,116,107,0.6) 91%, rgba(21,103,95,0.6) 100%);
+    background: -ms-linear-gradient(top, rgba(215,246,225,0.66) 0%, rgba(201,236,216,0.66) 7%, rgba(38,116,107,0.6) 91%, rgba(21,103,95,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(215,246,225,0.66) 0%, rgba(201,236,216,0.66) 7%, rgba(38,116,107,0.6) 91%, rgba(21,103,95,0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7f6e1', endColorstr='#15675f', GradientType=0 );
+
+}
+
+figure .back .titulo{
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 24px;
+}
+
+figure .back hr{
+    height: 2px;
+    border: none;
+    margin-bottom: 20px;
+    background: #fff;
+    opacity: .5;
+}
+
+figure .back p{
+    font-family: 'Open Sans',sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px){
+    figure .back{
+        backface-visibility: visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .contenedor-tarjeta:hover figure{
+        transform: perspective(600px) rotateY(0deg);
+    }
+}
